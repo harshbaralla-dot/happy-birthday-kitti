@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.card {
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 80px auto;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    color: #ff4b6e;
+    font-size: 38px;
+}
+
+.message {
+    font-size: 18px;
+    color: #444;
+}
+
+.highlight {
+    color: #ff4b6e;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background: #ff4b6e;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+.hidden {
+    display: none;
+}
+
+#surprise {
+    margin-top: 25px;
+    animation: fadeIn 1s ease;
+}
+
+.heart {
+    font-size: 60px;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
